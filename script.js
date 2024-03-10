@@ -10,7 +10,7 @@ document.getElementById('piedra').addEventListener('click', ()=>{
     play('tijeras');
   });
   
-  function play(userChoice) {
+  const play = (userChoice) =>{
     let choices = ["piedra", "papel", "tijeras"];
     let computerChoice = choices[Math.floor(Math.random() * choices.length)];
     
