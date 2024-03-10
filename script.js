@@ -1,16 +1,4 @@
-document.getElementById('piedra').addEventListener('click', ()=>{
-    play('piedra');
-    });
-  
-  document.getElementById('papel').addEventListener('click', ()=>{
-    play('papel');
-  });
-  
-  document.getElementById('tijeras').addEventListener('click', ()=>{
-    play('tijeras');
-  });
-  
-  const play = (userChoice) =>{
+const play =(userChoice) =>{
     let choices = ["piedra", "papel", "tijeras"];
     let computerChoice = choices[Math.floor(Math.random() * choices.length)];
     
@@ -27,3 +15,17 @@ document.getElementById('piedra').addEventListener('click', ()=>{
     
     document.getElementById("resultado").innerHTML = "Elegiste " + userChoice + ", la computadora eligió " + computerChoice + ". " + result;
   }
+  
+document.getElementById('piedra').addEventListener('click', ()=>{
+    play('piedra');
+    });
+  
+  document.getElementById('papel').addEventListener('click', ()=>{
+    play('papel');
+  });
+  
+  document.getElementById('tijeras').addEventListener('click', ()=>{
+    play('tijeras');
+  });
+  
+  
